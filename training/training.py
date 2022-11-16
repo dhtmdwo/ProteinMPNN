@@ -36,11 +36,156 @@ def main(args):
             os.makedirs(base_folder + subfolder)
 
     PATH = args.previous_checkpoint
-
+    #==========feature===================
     logfile = base_folder + 'log.txt'
+    logfile1 = base_folder + 'log1.txt'
+    logfile3 = base_folder + 'log3.txt'
+    logfile6 = base_folder + 'log6.txt'
+    logfile8 = base_folder + 'log8.txt'
+    #==========enc0===================
+    logfile15 = base_folder + 'log15.txt'
+    logfile17 = base_folder + 'log17.txt'
+    logfile19 = base_folder + 'log19.txt'
+    logfile21 = base_folder + 'log21.txt'
+    logfile23 = base_folder + 'log23.txt'
+    logfile25 = base_folder + 'log25.txt'
+    logfile27 = base_folder + 'log27.txt'
+    logfile29 = base_folder + 'log29.txt'
+    #==========enc1===================
+    logfile37 = base_folder + 'log37.txt'
+    logfile39 = base_folder + 'log39.txt'
+    logfile41 = base_folder + 'log41.txt'
+    logfile43 = base_folder + 'log43.txt'
+    logfile45 = base_folder + 'log45.txt'
+    logfile47 = base_folder + 'log47.txt'
+    logfile49 = base_folder + 'log49.txt'
+    logfile51 = base_folder + 'log51.txt'
+    #==========enc2===================
+    logfile59 = base_folder + 'log59.txt'
+    logfile61 = base_folder + 'log61.txt'
+    logfile63 = base_folder + 'log63.txt'
+    logfile65 = base_folder + 'log65.txt'
+    logfile67 = base_folder + 'log67.txt'
+    logfile69 = base_folder + 'log69.txt'
+    logfile71 = base_folder + 'log71.txt'
+    logfile73 = base_folder + 'log73.txt'
+    #==========dec0===================
+    logfile79 = base_folder + 'log79.txt'
+    logfile81 = base_folder + 'log81.txt'
+    logfile83 = base_folder + 'log83.txt'
+    logfile85 = base_folder + 'log85.txt'
+    logfile87 = base_folder + 'log87.txt'
+    #==========dec1===================
+    logfile93 = base_folder + 'log93.txt'
+    logfile95 = base_folder + 'log95.txt'
+    logfile97 = base_folder + 'log97.txt'
+    logfile99 = base_folder + 'log99.txt'
+    logfile101 = base_folder + 'log101.txt'
+    #==========dec2===================
+    logfile107 = base_folder + 'log107.txt'
+    logfile109 = base_folder + 'log109.txt'
+    logfile111 = base_folder + 'log111.txt'
+    logfile113 = base_folder + 'log113.txt'
+    logfile115 = base_folder + 'log115.txt'
+
     if not PATH:
         with open(logfile, 'w') as f:
             f.write('Epoch\tTrain\tValidation\n')
+        
+        with open(logfile1, 'w') as f1:
+            f1.write('Epoch\tTrain\tValidation\n')
+        with open(logfile3, 'w') as f3:
+            f3.write('Epoch\tTrain\tValidation\n')
+        with open(logfile6, 'w') as f6:
+            f6.write('Epoch\tTrain\tValidation\n')
+        with open(logfile8, 'w') as f8:
+            f8.write('Epoch\tTrain\tValidation\n')
+
+        with open(logfile15, 'w') as f15:
+            f15.write('Epoch\tTrain\tValidation\n')
+        with open(logfile17, 'w') as f17:
+            f17.write('Epoch\tTrain\tValidation\n')
+        with open(logfile19, 'w') as f19:
+            f19.write('Epoch\tTrain\tValidation\n')
+        with open(logfile21, 'w') as f21:
+            f21.write('Epoch\tTrain\tValidation\n')
+        with open(logfile23, 'w') as f23:
+            f23.write('Epoch\tTrain\tValidation\n')
+        with open(logfile25, 'w') as f25:
+            f25.write('Epoch\tTrain\tValidation\n')
+        with open(logfile27, 'w') as f27:
+            f27.write('Epoch\tTrain\tValidation\n')
+        with open(logfile29, 'w') as f29:
+            f29.write('Epoch\tTrain\tValidation\n')
+
+        with open(logfile37, 'w') as f37:
+            f37.write('Epoch\tTrain\tValidation\n')
+        with open(logfile39, 'w') as f39:
+            f39.write('Epoch\tTrain\tValidation\n')
+        with open(logfile41, 'w') as f41:
+            f41.write('Epoch\tTrain\tValidation\n')
+        with open(logfile43, 'w') as f43:
+            f43.write('Epoch\tTrain\tValidation\n')
+        with open(logfile45, 'w') as f45:
+            f45.write('Epoch\tTrain\tValidation\n')
+        with open(logfile47, 'w') as f47:
+            f47.write('Epoch\tTrain\tValidation\n')
+        with open(logfile49, 'w') as f49:
+            f49.write('Epoch\tTrain\tValidation\n')
+        with open(logfile51, 'w') as f51:
+            f51.write('Epoch\tTrain\tValidation\n')
+
+        with open(logfile59, 'w') as f59:
+            f59.write('Epoch\tTrain\tValidation\n')
+        with open(logfile61, 'w') as f61:
+            f61.write('Epoch\tTrain\tValidation\n')
+        with open(logfile63, 'w') as f63:
+            f63.write('Epoch\tTrain\tValidation\n')
+        with open(logfile65, 'w') as f65:
+            f65.write('Epoch\tTrain\tValidation\n')
+        with open(logfile67, 'w') as f67:
+            f67.write('Epoch\tTrain\tValidation\n')
+        with open(logfile69, 'w') as f69:
+            f69.write('Epoch\tTrain\tValidation\n')
+        with open(logfile71, 'w') as f71:
+            f71.write('Epoch\tTrain\tValidation\n')
+        with open(logfile73, 'w') as f73:
+            f73.write('Epoch\tTrain\tValidation\n')
+
+        with open(logfile79, 'w') as f79:
+            f79.write('Epoch\tTrain\tValidation\n')
+        with open(logfile81, 'w') as f81:
+            f81.write('Epoch\tTrain\tValidation\n')
+        with open(logfile83, 'w') as f83:
+            f83.write('Epoch\tTrain\tValidation\n')
+        with open(logfile85, 'w') as f85:
+            f85.write('Epoch\tTrain\tValidation\n')
+        with open(logfile87, 'w') as f87:
+            f87.write('Epoch\tTrain\tValidation\n')
+
+        with open(logfile93, 'w') as f93:
+            f93.write('Epoch\tTrain\tValidation\n')
+        with open(logfile95, 'w') as f95:
+            f95.write('Epoch\tTrain\tValidation\n')
+        with open(logfile97, 'w') as f97:
+            f97.write('Epoch\tTrain\tValidation\n')
+        with open(logfile99, 'w') as f99:
+            f99.write('Epoch\tTrain\tValidation\n')
+        with open(logfile101, 'w') as f101:
+            f101.write('Epoch\tTrain\tValidation\n')
+
+        with open(logfile107, 'w') as f107:
+            f107.write('Epoch\tTrain\tValidation\n')
+        with open(logfile109, 'w') as f109:
+            f109.write('Epoch\tTrain\tValidation\n')
+        with open(logfile111, 'w') as f111:
+            f111.write('Epoch\tTrain\tValidation\n')
+        with open(logfile113, 'w') as f113:
+            f113.write('Epoch\tTrain\tValidation\n')
+        with open(logfile115, 'w') as f115:
+            f115.write('Epoch\tTrain\tValidation\n')
+
+
 
     data_path = args.path_for_training_data
     params = {
@@ -200,7 +345,192 @@ def main(args):
             dt = np.format_float_positional(np.float32(t1-t0), unique=False, precision=1) 
             with open(logfile, 'a') as f:
                 f.write(f'epoch: {e+1}, step: {total_step}, time: {dt}, train: {train_perplexity_}, valid: {validation_perplexity_}, train_acc: {train_accuracy_}, valid_acc: {validation_accuracy_}\n')
+                f.write('\n')
+            
+            number = 1
+            for name, params in model.named_parameters():
+              if number ==1:
+                weights = str(model.get_parameter(name))
+                with open(logfile1, 'a') as f1:
+                  f1.write(weights+'\n')
+              if number ==3:
+                weights = str(model.get_parameter(name))
+                with open(logfile3, 'a') as f3:
+                  f3.write(weights+'\n')
+              if number ==6:
+                weights = str(model.get_parameter(name))
+                with open(logfile6, 'a') as f6:
+                  f6.write(weights+'\n')
+              if number ==8:
+                weights = str(model.get_parameter(name))
+                with open(logfile8, 'a') as f8:
+                  f8.write(weights+'\n')
+
+              if number ==15:
+                weights = str(model.get_parameter(name))
+                with open(logfile15, 'a') as f15:
+                  f15.write(weights+'\n')
+              if number ==17:
+                weights = str(model.get_parameter(name))
+                with open(logfile17, 'a') as f17:
+                  f17.write(weights+'\n')
+              if number ==19:
+                weights = str(model.get_parameter(name))
+                with open(logfile19, 'a') as f19:
+                  f19.write(weights+'\n')
+              if number ==21:
+                weights = str(model.get_parameter(name))
+                with open(logfile21, 'a') as f21:
+                  f21.write(weights+'\n')
+              if number ==23:
+                weights = str(model.get_parameter(name))
+                with open(logfile23, 'a') as f23:
+                  f23.write(weights+'\n')
+              if number ==25:
+                weights = str(model.get_parameter(name))
+                with open(logfile25, 'a') as f25:
+                  f25.write(weights+'\n')
+              if number ==27:
+                weights = str(model.get_parameter(name))
+                with open(logfile27, 'a') as f27:
+                  f27.write(weights+'\n')
+              if number ==29:
+                weights = str(model.get_parameter(name))
+                with open(logfile29, 'a') as f29:
+                  f29.write(weights+'\n')
+
+              if number ==37:
+                weights = str(model.get_parameter(name))
+                with open(logfile37, 'a') as f37:
+                  f37.write(weights+'\n')
+              if number ==39:
+                weights = str(model.get_parameter(name))
+                with open(logfile39, 'a') as f39:
+                  f39.write(weights+'\n')
+              if number ==41:
+                weights = str(model.get_parameter(name))
+                with open(logfile41, 'a') as f41:
+                  f41.write(weights+'\n')
+              if number ==43:
+                weights = str(model.get_parameter(name))
+                with open(logfile43, 'a') as f43:
+                  f43.write(weights+'\n')
+              if number ==45:
+                weights = str(model.get_parameter(name))
+                with open(logfile45, 'a') as f45:
+                  f45.write(weights+'\n')
+              if number ==47:
+                weights = str(model.get_parameter(name))
+                with open(logfile47, 'a') as f47:
+                  f47.write(weights+'\n')
+              if number ==49:
+                weights = str(model.get_parameter(name))
+                with open(logfile49, 'a') as f49:
+                  f49.write(weights+'\n')
+              if number ==51:
+                weights = str(model.get_parameter(name))
+                with open(logfile51, 'a') as f51:
+                  f51.write(weights+'\n')
+
+              if number ==59:
+                weights = str(model.get_parameter(name))
+                with open(logfile59, 'a') as f59:
+                  f59.write(weights+'\n')
+              if number ==61:
+                weights = str(model.get_parameter(name))
+                with open(logfile61, 'a') as f61:
+                  f61.write(weights+'\n')
+              if number ==63:
+                weights = str(model.get_parameter(name))
+                with open(logfile63, 'a') as f63:
+                  f63.write(weights+'\n')
+              if number ==65:
+                weights = str(model.get_parameter(name))
+                with open(logfile65, 'a') as f65:
+                  f65.write(weights+'\n')
+              if number ==67:
+                weights = str(model.get_parameter(name))
+                with open(logfile67, 'a') as f67:
+                  f67.write(weights+'\n')
+              if number ==69:
+                weights = str(model.get_parameter(name))
+                with open(logfile69, 'a') as f69:
+                  f69.write(weights+'\n')
+              if number ==71:
+                weights = str(model.get_parameter(name))
+                with open(logfile71, 'a') as f71:
+                  f71.write(weights+'\n')
+              if number ==73:
+                weights = str(model.get_parameter(name))
+                with open(logfile73, 'a') as f73:
+                  f73.write(weights+'\n')
+
+              if number ==79:
+                weights = str(model.get_parameter(name))
+                with open(logfile79, 'a') as f79:
+                  f79.write(weights+'\n')
+              if number ==81:
+                weights = str(model.get_parameter(name))
+                with open(logfile81, 'a') as f81:
+                  f81.write(weights+'\n')
+              if number ==83:
+                weights = str(model.get_parameter(name))
+                with open(logfile83, 'a') as f83:
+                  f83.write(weights+'\n')
+              if number ==85:
+                weights = str(model.get_parameter(name))
+                with open(logfile85, 'a') as f85:
+                  f85.write(weights+'\n')
+              if number ==87:
+                weights = str(model.get_parameter(name))
+                with open(logfile87, 'a') as f87:
+                  f87.write(weights+'\n')
+
+              if number ==93:
+                weights = str(model.get_parameter(name))
+                with open(logfile93, 'a') as f93:
+                  f93.write(weights+'\n')
+              if number ==95:
+                weights = str(model.get_parameter(name))
+                with open(logfile95, 'a') as f95:
+                  f95.write(weights+'\n')
+              if number ==97:
+                weights = str(model.get_parameter(name))
+                with open(logfile97, 'a') as f97:
+                  f97.write(weights+'\n')
+              if number ==99:
+                weights = str(model.get_parameter(name))
+                with open(logfile99, 'a') as f99:
+                  f99.write(weights+'\n')
+              if number ==101:
+                weights = str(model.get_parameter(name))
+                with open(logfile101, 'a') as f101:
+                  f101.write(weights+'\n')
+
+              if number ==107:
+                weights = str(model.get_parameter(name))
+                with open(logfile107, 'a') as f107:
+                  f107.write(weights+'\n')
+              if number ==109:
+                weights = str(model.get_parameter(name))
+                with open(logfile109, 'a') as f109:
+                  f109.write(weights+'\n')
+              if number ==111:
+                weights = str(model.get_parameter(name))
+                with open(logfile111, 'a') as f111:
+                  f111.write(weights+'\n')
+              if number ==113:
+                weights = str(model.get_parameter(name))
+                with open(logfile113, 'a') as f113:
+                  f113.write(weights+'\n')
+              if number ==115:
+                weights = str(model.get_parameter(name))
+                with open(logfile115, 'a') as f115:
+                  f115.write(weights+'\n')
+
+
             print(f'epoch: {e+1}, step: {total_step}, time: {dt}, train: {train_perplexity_}, valid: {validation_perplexity_}, train_acc: {train_accuracy_}, valid_acc: {validation_accuracy_}')
+            print("train weight : "+str(train_weights)+'\n')
             
             checkpoint_filename_last = base_folder+'model_weights/epoch_last.pt'.format(e+1, total_step)
             torch.save({
